@@ -1,0 +1,30 @@
+<!--pages/detail/detail.wxml-->
+<view>
+<div>
+<b>{{title}}</b>
+</div>
+
+<text>\n</text> 
+<text>\n</text> 
+
+<div>
+<b>{{author}}</b>
+</div>
+
+ <text>\n</text>  
+<!-- <text>\n</text> -->
+
+<div>
+<text>
+{{content}}
+</text>
+</div>
+
+<text>\n</text> 
+<text>\n</text> 
+
+<div>
+{{url}}
+</div>
+
+</view>
