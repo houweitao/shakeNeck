@@ -1,0 +1,6 @@
+{
+  "navigationBarBackgroundColor": "#000000",
+  "navigationBarTitleText": "story daily",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true
+}

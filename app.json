@@ -5,6 +5,7 @@
     "pages/newpage/newpage",
     "pages/news/news",
     "pages/detail/detail",
+    "pages/neck/neck",
     "pages/story/story"
   ],
   "window":{
@@ -37,6 +38,13 @@
         "selectedIconPath": "images/selected.png",
         "text": "story"
       },
+      {
+        "pagePath": "pages/neck/neck",
+        "iconPath": "images/read.png",
+        "selectedIconPath": "images/selected.png",
+        "text": "neck"
+      },
+      
       {
         "pagePath": "pages/newpage/newpage",
         "iconPath": "images/user.png",
