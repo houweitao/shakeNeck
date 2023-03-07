@@ -9,7 +9,7 @@ Page({
         that.changeText()
     },
 
-    changeText: function () {
+    changeText1: function () {
         this.setData({
             'texts[0]': "一二三456789\nsss",
             'texts[1]': "faklsflasflafkaklfka康师傅看见啊身份卡史可法凯撒",
@@ -18,7 +18,7 @@ Page({
         })
     },
 
-    changeText1: function () {
+    changeText: function () {
         var that = this//不要漏了这句，很重要
         console.log("reauest story data ");
         wx.request({
@@ -52,8 +52,8 @@ Page({
         this.setData({
             'texts[0]': chunk1,
             'texts[1]': chunk3,
-            // 'texts[2]': chunk2,
-            'texts[2]': "chunk2kaflasfaksfkasflaflaflalfl",
+            'texts[2]': chunk2,
+            // 'texts[2]': "chunk2kaflasfaksfkasflaflaflalfl",
             'texts[3]': chunk4
         })
 
