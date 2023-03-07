@@ -10,7 +10,7 @@
 
 .box {
     width: 45%;
-    height: 45%;
+    height: 46%;
     margin: 10px;
     background-color: #f1f1f1;
     display: flex;
@@ -20,19 +20,6 @@
     position: relative;
     border-radius: 10px;
 }
-
-/* .box {
-    width: 50%;
-    height: 50%;
-    margin: 10px;
-    background-color: #f1f1f1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5em;
-    position: relative;
-} */
-
 
 #box1 {
     -webkit-writing-mode: horizontal-tb;

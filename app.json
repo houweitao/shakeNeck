@@ -1,12 +1,7 @@
 {
     "pages": [
-        "pages/index/index",
-        "pages/logs/logs",
         "pages/newpage/newpage",
-        "pages/news/news",
-        "pages/detail/detail",
-        "pages/neck/neck",
-        "pages/story/story"
+        "pages/neck/neck"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -20,34 +15,16 @@
         "backgroundColor": "#fff",
         "list": [
             {
-                "pagePath": "pages/index/index",
-                "iconPath": "images/zhuye.png",
-                "selectedIconPath": "images/selected.png",
-                "text": "首页"
-            },
-            {
-                "pagePath": "pages/news/news",
-                "iconPath": "images/newspaper.png",
-                "selectedIconPath": "images/selected.png",
-                "text": "新闻"
-            },
-            {
-                "pagePath": "pages/story/story",
-                "iconPath": "images/read.png",
-                "selectedIconPath": "images/selected.png",
-                "text": "story"
-            },
-            {
-                "pagePath": "pages/neck/neck",
-                "iconPath": "images/read.png",
-                "selectedIconPath": "images/selected.png",
-                "text": "neck"
-            },
-            {
                 "pagePath": "pages/newpage/newpage",
                 "iconPath": "images/user.png",
                 "selectedIconPath": "images/selected.png",
                 "text": "我的"
+            },
+            {
+                "pagePath": "pages/neck/neck",
+                "iconPath": "images/stretching-exercises.png",
+                "selectedIconPath": "images/selected.png",
+                "text": "neck"
             }
         ]
     }

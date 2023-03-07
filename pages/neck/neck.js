@@ -36,26 +36,26 @@ Page({
                     joy: res.data.data.digest,
                     //res代表success函数的事件对，data是固定的，stories是是上面json数据中stories
                 })
+
+                var size = that.data.joy.length
+
+                const chunkSize = Math.ceil(size / 4); // 计算每个子字符串的长度
+
+                // 切割成四个不同的子字符串
+                const chunk1 = that.data.joy.slice(0, chunkSize);
+                const chunk2 = that.data.joy.slice(chunkSize, chunkSize * 2);
+                const chunk3 = that.data.joy.slice(chunkSize * 2, chunkSize * 3);
+                const chunk4 = that.data.joy.slice(chunkSize * 3, size);
+
+                that.setData({
+                    'texts[0]': chunk1,
+                    'texts[1]': chunk3,
+                    'texts[2]': chunk2,
+                    // 'texts[2]': "chunk2kaflasfaksfkasflaflaflalfl",
+                    'texts[3]': chunk4
+                })
+
             }
         })
-
-        var size = that.data.joy.length
-
-        const chunkSize = Math.ceil(size / 4); // 计算每个子字符串的长度
-
-        // 切割成四个不同的子字符串
-        const chunk1 = that.data.joy.slice(0, chunkSize);
-        const chunk2 = that.data.joy.slice(chunkSize, chunkSize * 2);
-        const chunk3 = that.data.joy.slice(chunkSize * 2, chunkSize * 3);
-        const chunk4 = that.data.joy.slice(chunkSize * 3, size);
-
-        this.setData({
-            'texts[0]': chunk1,
-            'texts[1]': chunk3,
-            'texts[2]': chunk2,
-            // 'texts[2]': "chunk2kaflasfaksfkasflaflaflalfl",
-            'texts[3]': chunk4
-        })
-
     }
 })
