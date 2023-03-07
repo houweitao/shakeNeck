@@ -1,12 +1,12 @@
 /* pages/newpage/newpage.wxss */
-.container{
-  width: 100%;
-  height:100%;
-  background-color: white
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: white
 }
 
-.textInfo{
-  font-size: 18px;
-  font-family: "微软雅黑"
+.textInfo {
+    font-size: 18px;
+    font-family: "微软雅黑"
 
 }

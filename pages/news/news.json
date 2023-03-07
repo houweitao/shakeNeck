@@ -1,6 +1,6 @@
 {
-  "navigationBarBackgroundColor": "#000000",
-  "navigationBarTitleText": "v2ex daily",
-  "navigationBarTextStyle": "white",
-  "enablePullDownRefresh": true
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "v2ex daily",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
 }

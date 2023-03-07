@@ -15,7 +15,7 @@
   </view>
   <view class="box" id="box4">
     <text class="number">4</text>
-    {{texts[3]}}
+    <text class="text-4">{{texts[3]}}</text>
   </view>
   <button class="change-btn" bindtap="changeText">Change Text</button>
 </view>

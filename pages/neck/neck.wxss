@@ -1,30 +1,30 @@
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .box {
-  width: 45%;
-  height: 45%;
-  margin: 10px;
-  background-color: #f1f1f1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5em;
-  position: relative;
+    width: 45%;
+    height: 45%;
+    margin: 10px;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    position: relative;
 }
 
 #box1 {
-  -webkit-writing-mode: horizontal-tb;
-  writing-mode: horizontal-tb;
+    -webkit-writing-mode: horizontal-tb;
+    writing-mode: horizontal-tb;
 }
 
 #box1 .text-1 {
-  transform: rotate(-90deg);
+    transform: rotate(-90deg);
 }
 
 #box3 {
@@ -33,64 +33,65 @@
 }
 
 #box3 .text-3 {
-  transform: rotate(-90deg);
+    transform: rotate(-90deg);
 }
-
 
 #box4 {
-  -webkit-writing-mode: vertical-lr;
-  writing-mode: vertical-lr;
+    -webkit-writing-mode: horizontal-tb;
+    writing-mode: horizontal-tb;
+    text-align: left;
 }
 
-#box4.number {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
+.text-4 {
+    transform: rotate(90deg);
+}
 
 #box2 {
-    -webkit-writing-mode: vertical-lr;
-    writing-mode: vertical-lr;
-}
-#box2 .text-2 {
-    transform: rotate(-00deg);
-  }
-
-.number {
-  position: absolute;
-  font-size: 1.5em;
+    -webkit-writing-mode: horizontal-tb;
+    writing-mode: horizontal-tb;
+    text-align: left;
 }
 
-.number:nth-child(1) {
-  bottom: 0;
-  right: 0;
-}
-
-.number:nth-child(2) {
-  bottom: 0;
-  left: 0;
-}
-
-.number:nth-child(3) {
-  bottom: 0;
-  right: 0;
-}
-
-.number:nth-child(4) {
-  top: 0;
-  left: 0;
+.text-2 {
+    transform: rotate(90deg);
 }
 
 .change-btn {
     position: fixed;
     bottom: 0;
-  font-size: 1.2em;
-  padding: 10px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
+    font-size: 1.2em;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.number {
+    position: absolute;
+    font-size: 1.5em;
+}
+
+.number:nth-child(1) {
+    bottom: 0;
+    right: 0;
+}
+
+.number:nth-child(2) {
+    bottom: 0;
+    left: 0;
+}
+
+.number:nth-child(3) {
+    bottom: 0;
+    right: 0;
+}
+
+.number:nth-child(4) {
+    top: 0;
+    left: 0;
 }

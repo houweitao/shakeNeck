@@ -1,5 +1,5 @@
 {
-  "navigationBarBackgroundColor": "#000000",
-  "navigationBarTitleText": "this is my new page",
-  "navigationBarTextStyle": "white"
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "this is my new page",
+    "navigationBarTextStyle": "white"
 }

@@ -1,25 +1,25 @@
 <view class="container">
-  <view class='textInfo'>恭喜你 添加了新页面！</view>
-  <view>{{info}}</view>
-  <view></view>
-  <button type='primary' bindtap='bindClickButton'>click me</button>
+    <view class='textInfo'>恭喜你 添加了新页面！</view>
+    <view>{{info}}</view>
+    <view></view>
+    <button type='primary' bindtap='bindClickButton'>click me</button>
 
-<view class="section">
-  <input id="urlToSave" placeholder="请输入url" bindinput='saveKeyInput'/>
-  <button type='primary' bindtap='bindClickSaveToPocket'>保存Pocket</button>
-</view>
+    <view class="section">
+        <input id="urlToSave" placeholder="请输入url" bindinput='saveKeyInput' />
+        <button type='primary' bindtap='bindClickSaveToPocket'>保存Pocket</button>
+    </view>
 
-<!-- <view class="section">
+    <!-- <view class="section">
   <view class="section__title">你输入的是：{{inputValue}}</view>
   <input  bindinput="bindKeyInput" placeholder="输入同步到view中"/>
 </view> -->
 
-  <view wx:for="{{[1, 2, 3, 4]}}" wx:for-item="i">
-    <view wx:for="{{[1, 2, 3, 4]}}" wx:for-item="j">
-      <view wx:if="{{i <= j}}">
-        {{i}} * {{j}} = {{i * j}}
-      </view>
+    <view wx:for="{{[1, 2, 3, 4]}}" wx:for-item="i">
+        <view wx:for="{{[1, 2, 3, 4]}}" wx:for-item="j">
+            <view wx:if="{{i <= j}}">
+                {{i}} * {{j}} = {{i * j}}
+            </view>
+        </view>
     </view>
-  </view>
 
 </view>
