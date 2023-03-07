@@ -1,7 +1,8 @@
 {
     "pages": [
-        "pages/newpage/newpage",
-        "pages/neck/neck"
+        "pages/neck/neck",
+        "pages/index/index",
+        "pages/story/story"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -9,23 +10,5 @@
         "navigationBarTitleText": "wechat",
         "navigationBarTextStyle": "black",
         "enablePullDownRefresh": true
-    },
-    "tabBar": {
-        "color": "#000000",
-        "backgroundColor": "#fff",
-        "list": [
-            {
-                "pagePath": "pages/newpage/newpage",
-                "iconPath": "images/user.png",
-                "selectedIconPath": "images/selected.png",
-                "text": "我的"
-            },
-            {
-                "pagePath": "pages/neck/neck",
-                "iconPath": "images/stretching-exercises.png",
-                "selectedIconPath": "images/selected.png",
-                "text": "neck"
-            }
-        ]
     }
 }

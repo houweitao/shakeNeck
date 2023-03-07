@@ -16,7 +16,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
+    font-size: 1.3em;
     position: relative;
     border-radius: 10px;
 }
@@ -86,23 +87,23 @@
 #box1 .number {
     transform: translate(0%, -100%);
     top: 100%;
-    right: 0%;
+    right: 4%;
 }
 
 #box2 .number {
     transform: translate(0%, -100%);
     top: 100%;
-    left: 0%;
+    left: 1%;
 }
 
 #box3 .number {
     /* transform: translate(-50%, -50%); */
     top: 0%;
-    right: 0%;
+    right: 3%;
 }
 
 #box4 .number {
     /* transform: translate(-50%, -50%); */
     top: 0%;
-    left: 0%;
+    left: 2%;
 }

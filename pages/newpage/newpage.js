@@ -20,9 +20,11 @@ Page({
         })
     },
     bindClickButton: function () {
+        console.log("????")
         wx.navigateTo({
-            url: '../index/index',
+            url: '/pages/neck/neck'
         })
+
         var that = this;
         that.setData({
             'welcome': 'change welcome'
