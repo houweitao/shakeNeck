@@ -1,23 +1,21 @@
 <view class="container">
-  <view class="box" id="box1">
-    <text class="number">1</text>
-    <text class="text-1">{{texts[0]}}</text>
-  </view>
-  <view class="box" id="box3">
-    <text class="number">3</text>
-    <text class="text-3">{{texts[1]}}</text>
-    <!-- <text class="number">2</text> -->
-  </view>
-  <view class="box" id="box2">
-    <text class="number">2</text>
-    <text class="text-2">{{texts[2]}}</text>
-    <!-- <text class="number">3</text> -->
-  </view>
-  <view class="box" id="box4">
-    <text class="number">4</text>
-    <text class="text-4">{{texts[3]}}</text>
-  </view>
-  <button class="change-btn" bindtap="changeText">Change Text</button>
+    <view class="box" id="box1">
+        <text class="number">1</text>
+        <text class="text-1">{{texts[0]}}</text>
+    </view>
+    <view class="box" id="box3">
+        <text class="number">3</text>
+        <text class="text-3">{{texts[1]}}</text>
+        <!-- <text class="number">2</text> -->
+    </view>
+    <view class="box" id="box2">
+        <text class="number">2</text>
+        <text class="text-2">{{texts[2]}}</text>
+        <!-- <text class="number">3</text> -->
+    </view>
+    <view class="box" id="box4">
+        <text class="number">4</text>
+        <text class="text-4">{{texts[3]}}</text>
+    </view>
+    <button class="change-btn" bindtap="changeText">换一个</button>
 </view>
-
-

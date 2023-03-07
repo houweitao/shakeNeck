@@ -1,6 +1,6 @@
 {
-    "navigationBarBackgroundColor": "#000000",
-    "navigationBarTitleText": "story daily",
+    "navigationBarBackgroundColor": "#00a7d0",
+    "navigationBarTitleText": "扭扭脖子",
     "navigationBarTextStyle": "white",
-    "enablePullDownRefresh": true
+    "enablePullDownRefresh": false
 }
