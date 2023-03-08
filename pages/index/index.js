@@ -8,7 +8,11 @@ Page({
     onLoad: function () {
         var that = this//不要漏了这句，很重要
         that.changeText()
-        // that.changeText2()
+        wx.showShareMenu()
+    },
+
+    onShareAppMessage: function () {
+        // https://juejin.cn/post/7026222065774493704
     },
 
     showSentense: function () {
