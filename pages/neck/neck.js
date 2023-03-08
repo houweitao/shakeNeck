@@ -42,7 +42,7 @@ Page({
                 'Content-Type': 'application/json'
             },
             success: function (res) {
-                console.log("changeText2 story.data: ");
+                console.log("changeText story.data: ");
                 console.log(res.data);
                 that.setData({
                     sentense: res.data.msg,
