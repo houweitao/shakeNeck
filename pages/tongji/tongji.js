@@ -7,7 +7,7 @@ Page({
 
     goToShake: function () {
         wx.navigateTo({
-            url: '/pages/index/index'
+            url: '/pages/index/index?refresh=1'
         })
     },
 
