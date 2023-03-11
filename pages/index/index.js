@@ -74,6 +74,12 @@ Page({
 
     changeText: function () {
         var that = this
+
+        var shake_neck = 'shakeNeck'
+        var shake_record = wx.getStorageSync(shake_neck) || []
+        shake_record.unshift(Date.now()/1000)
+        wx.setStorageSync(shake_neck, shake_record)
+
         // that.getNetEaseMusic()
         that.randomJoy()
     },
