@@ -1,0 +1,24 @@
+<view class="container">
+    <view class="first">
+        <view class="text">脖子右拧</view>
+        <button class="big-button" bindtap="goToShake">开始运动</button>
+        <button class="small-button">问题反馈</button>
+        <view class="left-right">
+            <view class="left">
+                <view class="left-text">今日活动次数</view>
+                <view class="left-text">Left Text 2</view>
+            </view>
+            <view class="right">
+                <view class="right-text">累积活动次数</view>
+                <view class="right-text">Right Text 2</view>
+            </view>
+        </view>
+    </view>
+    <view class="second">
+        <view class="text">This is another paragraph of text.</view>
+        <view class="chart">
+            <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas" bindtouchstart="touchHandler"></canvas>
+        </view>
+        <button type="primary" bindtap="updateData">刷新数据</button>
+    </view>
+</view>
