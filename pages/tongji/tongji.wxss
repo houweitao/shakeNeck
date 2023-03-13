@@ -25,38 +25,69 @@
     /* 垂直方向上居中 */
     align-items: center;
     /* 水平方向上居中 */
+    background-color: #00a7d0;
 }
 
 .first .text {
-    font-size: 24rpx;
-    margin: 20rpx;
+    font-size: 36rpx;
+    margin: 60rpx;
+    color: white;
 }
 
 .big-button {
-    background-color: #4CAF50;
+    background-color: #ccc;
     border: none;
-    color: white;
+    /* color: white; */
+    color: #00a7d0;
     padding: 80rpx;
     text-align: center;
     text-decoration: none;
-    font-size: 24rpx;
-    margin: 20rpx;
-    width: 30%;
+    font-size: 36rpx;
+    margin: 50rpx;
+    height: 90%;
+    /* width: 30%; */
     border-radius: 50%;
     /* 使按钮变成圆形 */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .26);
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, .26); */
     /* 添加阴影效果 */
-    transition: box-shadow 0.3s ease;
+    /* transition: box-shadow 0.7s ease; */
     /* 添加过渡动画效果 */
+
+    position: relative;
+    /* background-color: transparent; */
+    /* border: none; */
+    /* outline: none; */
+
+    /* animation: pulsate 5s ease-out; */
+    /* 添加pulsate动画，持续1秒，缓动函数为ease-out */
+    /* animation-iteration-count: infinite; */
+    /* 无限循环动画 */
+    /* opacity: 0.8; */
+    /* 内部圆的不透明度为0.5 */
 
 }
 
-.big-button:hover {
-    transform: scale(1.2);
-    /* 鼠标悬停时，将按钮放大 1.2 倍 */
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .26);
-    /* 鼠标悬停时加深阴影效果 */
-    /* 鼠标悬停时，加强阴影效果 */
+@keyframes pulsate {
+
+    /* // 定义名为pulsate的动画 */
+    50% {
+        transform: scale(0.5, 0.5);
+        /* // 将内部圆缩小为0.1倍 */
+        opacity: 0.5;
+        /* // 不透明度为0.5 */
+    }
+
+    50% {
+        opacity: 1;
+        /* // 不透明度为1 */
+    }
+
+    100% {
+        transform: scale(1.2, 1.2);
+        /* // 将内部圆放大为1.2倍 */
+        opacity: 0;
+        /* // 不透明度为0 */
+    }
 }
 
 .small-button {
@@ -86,8 +117,9 @@
 }
 
 .left-text {
-    font-size: 16rpx;
+    font-size: 36rpx;
     margin: 10rpx;
+    color: white;
 }
 
 .right {
@@ -99,8 +131,9 @@
 }
 
 .right-text {
-    font-size: 16rpx;
+    font-size: 36rpx;
     margin: 10rpx;
+    color: white;
 }
 
 .second {
@@ -110,8 +143,8 @@
 }
 
 .second .text {
-    font-size: 24rpx;
-    margin: 20rpx;
+    font-size: 36rpx;
+    margin: 10rpx;
 }
 
 .chart {

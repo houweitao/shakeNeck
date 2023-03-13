@@ -1,8 +1,8 @@
 <view class="container">
     <view class="first">
-        <view class="text">花10秒钟读一个段子，解除颈椎疲劳把😄</view>
+        <view class="text">点击下方按钮，解除颈椎疲劳吧😄</view>
         <button class="big-button" bindtap="goToShake">开始运动</button>
-        <button class="small-button">问题反馈</button>
+        <!-- <button class="small-button" bindtap="toCustomService">问题反馈</button> -->
         <view class="left-right">
             <view class="left">
                 <view class="left-text">今日活动次数</view>
@@ -20,6 +20,6 @@
         <view class="chart">
             <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas" bindtouchstart="touchHandler"></canvas>
         </view>
-        <button type="primary" bindtap="updateData">刷新数据</button>
+        <!-- <button id="" type="primary" bindtap="updateData">刷新数据</button> -->
     </view>
 </view>

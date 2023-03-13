@@ -23,6 +23,18 @@ Page({
         });
     },
 
+    // toCustomService: function () {
+    //     wx.openCustomerServiceConversation({
+    //         success: function (res) {
+    //             console.log('打开客服会话成功');
+    //         },
+    //         fail: function (res) {
+    //             console.log('打开客服会话失败');
+    //         }
+    //     });
+    // },
+
+
     getLast7Days: function () {
         /// 获取当前日期
         let today = new Date();
@@ -146,10 +158,16 @@ Page({
 
 
     },
-    onLoad: function (e) {
 
+    onShow: function (e) {
         var that = this;
         that.updateData();
+        console.log('on show')
+    },
 
+    onLoad: function (e) {
+        var that = this;
+        // that.updateData();
+        console.log('on onLoad')
     }
 });
