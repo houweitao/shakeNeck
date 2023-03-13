@@ -23,6 +23,18 @@ Page({
         });
     },
 
+    // toCustomService: function () {
+    //     wx.openCustomerServiceConversation({
+    //         success: function (res) {
+    //             console.log('打开客服会话成功');
+    //         },
+    //         fail: function (res) {
+    //             console.log('打开客服会话失败');
+    //         }
+    //     });
+    // },
+
+
     getLast7Days: function () {
         /// 获取当前日期
         let today = new Date();
@@ -38,7 +50,11 @@ Page({
             let date = new Date(today);
             date.setUTCDate(date.getUTCDate() - i);
             let dateString = date.toLocaleString("default", options).slice(5, 9);
-            datesArray.push(dateString);
+            // datesArray.push(dateString);
+
+            var month = date.getMonth() + 1;
+            var day = date.getDate();
+            datesArray.push(month + '/' + day);
         }
 
         // 输出数组
@@ -146,10 +162,30 @@ Page({
 
 
     },
-    onLoad: function (e) {
 
+    touchStart: function (event) {
+        // 手指按下时，修改按钮样式
+        this.setData({
+            buttonColor: '#90EE90',
+        });
+    },
+
+    touchEnd: function (event) {
+        // 手指松开时，恢复按钮样式
+        this.setData({
+            buttonColor: '#ccc',
+        });
+    },
+
+    onShow: function (e) {
         var that = this;
         that.updateData();
+        console.log('on show')
+    },
 
+    onLoad: function (e) {
+        var that = this;
+        // that.updateData();
+        console.log('on onLoad')
     }
 });
