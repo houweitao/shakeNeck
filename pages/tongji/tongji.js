@@ -159,6 +159,20 @@ Page({
 
     },
 
+    touchStart: function (event) {
+        // 手指按下时，修改按钮样式
+        this.setData({
+            buttonColor: '#90EE90',
+        });
+    },
+
+    touchEnd: function (event) {
+        // 手指松开时，恢复按钮样式
+        this.setData({
+            buttonColor: '#ccc',
+        });
+    },
+
     onShow: function (e) {
         var that = this;
         that.updateData();

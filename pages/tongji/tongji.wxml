@@ -1,7 +1,7 @@
 <view class="container">
     <view class="first">
         <view class="text">点击下方按钮，解除颈椎疲劳吧😄</view>
-        <button class="big-button" bindtap="goToShake">开始运动</button>
+        <button class="big-button" style="background-color:{{buttonColor}};" bindtouchstart="touchStart" bindtouchend="touchEnd" bindtap="goToShake">开始运动</button>
         <!-- <button class="small-button" bindtap="toCustomService">问题反馈</button> -->
         <view class="left-right">
             <view class="left">
