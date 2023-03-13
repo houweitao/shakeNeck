@@ -1,7 +1,7 @@
 {
     "pages": [
-        "pages/tongji/tongji",
-        "pages/index/index"
+        "pages/index/index",
+        "pages/tongji/tongji"
     ],
     "window": {
         "backgroundTextStyle": "light",

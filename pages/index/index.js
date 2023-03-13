@@ -6,20 +6,12 @@ Page({
         joyTotalPageNum: 8000
     },
 
-    onLoad: function (options) {
+    onLoad: function () {
         var that = this//不要漏了这句，很重要
 
         var last_joy_key = 'lastJoy'
         var last_joy = wx.getStorageSync(last_joy_key) || ""
         that.initJoy(last_joy)
-
-        if (options.refresh == 1) {
-            // from other page
-            return;
-        }
-
-        // that.initJoy()
-        that.changeText()
         wx.showShareMenu()
     },
 
@@ -48,6 +40,14 @@ Page({
         that.showSentense(sentense)
     },
 
+    replaceStartsWith2: function (str) {
+        if (str.startsWith('2')) {
+            return str.replace(/^2/, '');
+        }
+        return str;
+    },
+
+
     showSentense: function (sentense) {
         var that = this//不要漏了这句，很重要
         console.log('showSentense')
@@ -64,6 +64,7 @@ Page({
         sentense = sentense.replace(/&nbsp;/g, "");
         sentense = sentense.replace(/\s+/g, " ");
         sentense = sentense.replace(/<br\s*\/?>/gi, " ").replace(/\n/g, " ");
+        sentense = that.replaceStartsWith2(sentense)
 
         // console.log(sentense)
 
@@ -98,8 +99,8 @@ Page({
         shake_record.unshift(Date.now())
         wx.setStorageSync(shake_neck_key, shake_record)
 
-        // that.getNetEaseMusic()
-        that.randomJoy()
+        that.getNetEaseMusic()
+        // that.randomJoy()
     },
 
     getNetEaseMusic: function () {
