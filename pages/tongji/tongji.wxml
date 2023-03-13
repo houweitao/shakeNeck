@@ -1,0 +1,25 @@
+<view class="container">
+    <view class="first">
+        <view class="text">花10秒钟读一个段子，解除颈椎疲劳把😄</view>
+        <button class="big-button" bindtap="goToShake">开始运动</button>
+        <button class="small-button">问题反馈</button>
+        <view class="left-right">
+            <view class="left">
+                <view class="left-text">今日活动次数</view>
+                <view class="left-text">{{shakeNumToday}}</view>
+            </view>
+            <view class="right">
+                <view class="right-text">累积活动次数</view>
+                <view class="right-text">{{shakeNumAll}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="second">
+        <view class="text">活动统计</view>
+
+        <view class="chart">
+            <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas" bindtouchstart="touchHandler"></canvas>
+        </view>
+        <button type="primary" bindtap="updateData">刷新数据</button>
+    </view>
+</view>
