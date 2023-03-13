@@ -50,7 +50,11 @@ Page({
             let date = new Date(today);
             date.setUTCDate(date.getUTCDate() - i);
             let dateString = date.toLocaleString("default", options).slice(5, 9);
-            datesArray.push(dateString);
+            // datesArray.push(dateString);
+
+            var month = date.getMonth() + 1;
+            var day = date.getDate();
+            datesArray.push(month + '/' + day);
         }
 
         // 输出数组
