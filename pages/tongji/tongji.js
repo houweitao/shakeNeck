@@ -181,6 +181,7 @@ Page({
         var that = this;
         that.updateData();
         console.log('on show')
+        wx.showShareMenu()
     },
 
     onLoad: function (e) {
