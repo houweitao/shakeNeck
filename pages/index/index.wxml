@@ -17,5 +17,5 @@
         <text class="number">4</text>
         <text class="text-4">{{texts[3]}}</text>
     </view>
-    <button class="change-btn" bindtap="changeText">换一个</button>
+    <button class="change-btn" style="background-color:{{buttonColor}};" bindtouchstart="touchStart" bindtouchend="touchEnd" bindtap="changeText">换一个</button>
 </view>

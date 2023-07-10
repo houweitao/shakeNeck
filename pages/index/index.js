@@ -19,6 +19,20 @@ Page({
         // https://juejin.cn/post/7026222065774493704
     },
 
+    touchStart: function (event) {
+        // 手指按下时，修改按钮样式
+        this.setData({
+            buttonColor: '#90EE90',
+        });
+    },
+
+    touchEnd: function (event) {
+        // 手指松开时，恢复按钮样式
+        this.setData({
+            buttonColor: '#00a7d0',
+        });
+    },
+
     initJoy: function (last_joy) {
         var that = this
 
