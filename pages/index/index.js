@@ -119,16 +119,18 @@ Page({
 
     getNetEaseMusic: function () {
         var that = this
+        // console.log("getNetEaseMusic begin");
 
         wx.request({
-            url: 'https://zj.v.api.aa1.cn/api/wenan-wy/?type=json',
+            // url: 'https://zj.v.api.aa1.cn/api/wenan-wy/?type=json',
+            url: 'https://fc-mp-05d39e98-c1db-4e50-9702-503bbf9a2a8e.next.bspapp.com/all_in_one/house/wangyiyun_pinglun',
             headers: {
                 'Content-Type': 'application/json'
             },
             success: function (res) {
                 // console.log("getNetEaseMusic story.data: ");
                 // console.log(res.data);
-                that.showSentense(res.data.msg)
+                that.showSentense(res.data.body.msg)
             },
             fail(err) {
                 console.error('getNetEaseMusic: ' + err)
